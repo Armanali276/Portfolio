@@ -43,6 +43,9 @@ img {
 .flex-direction-column {
     flex-direction: column;
 }
+.flex-wrap {
+    flex-wrap: wrap;
+}
 .text-center {
     text-align: center;
 }
@@ -57,6 +60,11 @@ img {
 }
 .w60 {
     width: 100%;
+}
+@media screen and (max-width: 768px) {
+    .mw60 {
+        width: 100%;
+    }
 }
 .btn-primary {
     background: var(--blue-color);
@@ -86,6 +94,13 @@ h2.title {
     color: var(--blue-color);
     font-size: 40px;
     font-weight: 900;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+p.sub-text{
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 16px;
 }
 header {
     padding: 1.5rem 0;
@@ -184,7 +199,66 @@ header.shrink {
     border-radius: 50%;
     animation: 1.6s ease infinite wheel-up-down;
 }
-
+.aboutus-wrap .inner {
+    margin-top: 3rem;
+}
+.aboutus-wrap .inner .text {
+    width: 40%;
+    margin-left: auto;
+}
+.aboutus-wrap .inner .image {
+    position: relative;
+}
+.aboutus-wrap .inner .image::before {
+    width: 300px;
+    height: 300px;
+    content: "";
+    z-index: -1;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -90px;
+    right: -90px;
+    background: #f8f9fa;
+}
+.aboutus-wrap .inner .text p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    font-weight: 400;
+    color: gray;
+}
+.aboutus-wrap .inner .text h3 {
+    margin-bottom: 1.5rem;
+}
+h3 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+ul.check {
+    list-style: none;
+}
+ul.check li {
+    padding-left: 35px;
+    position: relative;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: gray;
+}
+ul.check li::before {
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' style='fill: %2371bc42;'%3E%3Cpath d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z'%3E%3C/path%3E%3C/svg%3E");
+    background-position: center left;
+    background-size: contain;
+    width: 20px;
+    display: inline-block;
+    height: 20px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
 @keyframes wheel-up-down {
     0% {
         margin-top: 2px;
