@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="sticky-wrapper">
@@ -44,17 +45,17 @@
         </div>
         <div class="secion aboutus-wrap" id="about-us">
             <div class="container">
-                <h2 class="title text-center">About Us</h2>
+                <h2 class="title text-center" data-aos="fade-up" data-aos-delay="100">About Us</h2>
                 <div class="inner flex flex-wrap">
                     <div class="image w30 mw60">
-                        <img src="./images/hero_1.jpg.jpg" alt="">
+                        <img src="./images/hero_1.jpg.jpg" data-aos="flip-left" data-aos-delay="100" alt="">
                     </div>
                     <div class="text w30 mw60">
-                        <h3>For the next great business</h3>
-                        <div class="rte">
+                        <h3 data-aos="fade-up" data-aos-delay="100">For the next great business</h3>
+                        <div class="rte" data-aos="fade-up" data-aos-delay="100">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora cumque eligendi in nostrum labore omnis quaerat.</p>
                         </div>
-                        <ul class="check">
+                        <ul class="check" data-aos="fade-up" data-aos-delay="100">
                             <li>Officia quaerat eaque neque</li>
                             <li>Possimus aut consequuntur incidunt</li>
                             <li>Lorem ipsum dolor sit amet</li>
@@ -66,8 +67,8 @@
         </div>
         <div class="secion features-wrap">
             <div class="container">
-                <h2 class="title text-center">Our Features</h2>
-                <p class="sub-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.</p>
+                <h2 class="title text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Our Features</h2>
+                <p class="sub-text text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.</p>
                 <div class="inner">
                     <div class="slider-img">
                         <div class="img"><img src="./images/slide_1.jpg.jpg" alt=""></div>
@@ -690,6 +691,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script/main.js"></script>
 </body>
 </html>

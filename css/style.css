@@ -100,7 +100,10 @@ h2.title {
 p.sub-text{
     font-size: 1.25rem;
     font-weight: 300;
-    margin-bottom: 16px;
+    max-width: 635px;
+    margin: 0 auto 16px;
+    color: gray;
+    line-height: 1.7;
 }
 header {
     padding: 1.5rem 0;
