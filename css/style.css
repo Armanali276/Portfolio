@@ -49,6 +49,15 @@ img {
 .text-uppercase {
     text-transform: uppercase;
 }
+.secion {
+    padding: 5rem 0;
+}
+.w30 {
+    width: 50%;
+}
+.w60 {
+    width: 100%;
+}
 .btn-primary {
     background: var(--blue-color);
     border-color: var(--blue-color);
