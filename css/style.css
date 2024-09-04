@@ -82,6 +82,11 @@ img {
     height: 48px;
     width: auto;
 }
+h2.title {
+    color: var(--blue-color);
+    font-size: 40px;
+    font-weight: 900;
+}
 header {
     padding: 1.5rem 0;
     background-color: transparent;
