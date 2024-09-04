@@ -7,41 +7,42 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
+    <header class="sticky-wrapper">
         <div class="container">
-            <div class="inner flex">
+            <div class="inner flex space-between align-center">
                 <div class="logo">
                     <img src="./images/Logo.jpg" width="200" alt="">
                 </div>
                 <div class="header-menu">
-                    <ul>
-                        <li><a href="#">Test</a></li>
-                        <li><a href="#">Test</a></li>
-                        <li><a href="#">Test</a></li>
-                        <li><a href="#">Test</a></li>
-                        <li><a href="#">Test</a></li>
-                        <li><a href="#">Test</a></li>
+                    <ul class="flex">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
     <div class="main-wrapper">
-        <div class="banner" style="background-image: url('./images/hero_2.jpg.jpg');">
-            <div class="container">
-                <div class="inner">
-                    <h1>Welcome</h1>
+        <div class="banner flex space-between align-center" style="background-image: url('./images/hero_2.jpg.jpg');">
+            <div class="container narrow-container">
+                <div class="inner text-center">
+                    <h1 class="text-uppercase">Welcome</h1>
                     <div class="rte">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio soluta eius error.</p>
                     </div>
                     <button class="btn-primary">Get in Touch</button>
-                    <div class="dot-mouse">
-                        <span class="mouse-wheel"></span>
-                    </div>
                 </div>
             </div>
+            <div class="dot-mouse">
+                <a href="#about-us" class="mouse-wheel"></a>
+            </div>
         </div>
-        <div class="aboutus-wrap">
+        <div class="aboutus-wrap" id="about-us">
             <div class="container">
                 <h2 class="title">About Us</h2>
                 <div class="inner flex">
@@ -689,5 +690,6 @@
             </div>
         </div>
     </footer>
+    <script src="./script/main.js"></script>
 </body>
 </html>
